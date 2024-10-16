@@ -1,0 +1,191 @@
+/* .back-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 32px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+.back-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
+  transition: 300ms ease-in;
+  transition-property: opacity;
+  opacity: 0;
+  animation: slide 500ms linear infinite alternate-reverse both;
+  animation-play-state: paused;
+}
+.back-link:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+} */
+
+
+
+
+.benefits-rewiews {  
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  /* padding-top: 36px; */
+  /* padding-bottom: 36px; */
+  background:#FFFFFF;
+  /* var(--light-blue, #FFFFFF); */
+  }
+    
+  /* .benefits-reviews-div {
+    margin: 0 auto;
+  } */
+    
+  .benefits-reviews-title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 64px;
+    font-family: Impact;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-bottom: 30px; */
+  }
+    
+  .benefits-reviews-list { 
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    gap: 32px; 
+  }
+    
+    .benefits-reviews-list-item {
+      width: 100%;
+      /* padding: 20px 20px; */
+      /* background-color: #ffffff; */
+    }
+    
+    /* .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
+      display: none;
+    } */
+    
+    /* .benefits-reviews-block {  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+    /* .benefits-reviews-block-block { 
+      display: flex;
+      flex-direction: column;
+      margin-left: 14px;
+    } */
+    
+    .benefits-reviews-item { 
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      text-transform: uppercase;
+    } */
+    
+      .benefits-reviews-item-text { 
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+    
+    }
+    
+    /* ------MEDIA----- */
+    
+    @media screen and (min-width: 768px) {
+      
+      .benefits-reviews-title {
+      font-size: 108px;
+      line-height: 124px;
+      font-weight: 400;
+      font-family: Impact;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      }
+
+
+      .benefits-reviews-list { 
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      gap: 32px; 
+      }
+
+  /* .benefit-column-0{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+      }  */
+
+.benefit-column-1{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  gap: 32px;
+}
+
+.benefit-column-2{
+display: flex;
+gap: 32px;
+}
+
+.benefit-column-3{
+display: flex;
+/* flex-direction: column; */
+gap: 32px;
+}
+
+}
+
+
+    
+@media screen and (min-width: 1280px) {
+      /* .benefits-reviews-div {
+        max-width: 1440px; 
+        padding: 0; 60px;
+       }   */
+    
+      /* .benefits-rewiews  {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      } */
+    
+      /* .benefits-reviews-list {
+        row-gap: 24px;
+        justify-content: center;
+      } */
+    
+      /* .benefits-reviews-list-item {
+        width: calc((100% - 32px * 2) / 3);
+        padding: 32px;
+      } */
+    
+      /* .benefits-reviews-list-item:not(:nth-child(-n + 1)) {
+        display: block;
+      } */
+
+      /* .benefits-reviews-title {
+        display: flex;
+        justify-content: left;
+      } */
+
+      /* .bgr-img-benefits {
+        position:relative;
+        width: 526px;
+        height: 408px;
+        left: 722px;
+      } */
+    }
+
