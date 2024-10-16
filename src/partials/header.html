@@ -1,19 +1,55 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+    <div class="container header-container">
+      <nav class="nav">
+        <a class="logo" href="./index.html"
+          >Lloyd<span class="accent">Jefferson.</span></a
+        >
+        <div class="button-theme-wrapper">
+          <button class="btn-header" id="btn-header">
+            <span class="circle" id="header-mob-span"></span>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-link-tag">
+              <a class="nav-tag" href="#about">About me</a>
+            </li>
+            <li class="nav-link-tag">
+              <a class="nav-tag" href="#projects">Projects</a>
+            </li>
+            <li class="nav-link-tag">
+              <a class="nav-tag" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="mob-menu-btn js-open-menu">
+        <svg class="mob-svg" width="16" height="16">
+          <use href="./img/icon.svg#icon-lets-mob"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      </button>
+      <div class="mob-menu js-menu-container">
+        <header class="mob-header">
+          <a class="mob-logo" href="./index.html"
+            >Lloyd<span class="mob-accent">Jefferson.</span></a
+          >
+          <button class="mob-btn-close js-close-menu" title="close" type="button">
+            <svg class="mob-close-svg" width="16" height="16">
+              <use href="./img/icon.svg#icon-closing"></use>
+            </svg>
+          </button>
+        </header>
+        <nav class="mob-nav">
+          <ul class="mob-nav-list">
+            <li class="mob-nav-link-tag">
+              <a class="mob-nav-tag current" href="#about">About me</a>
+            </li>
+            <li class="mob-nav-link-tag">
+              <a class="mob-nav-tag" href="#projects">Projects</a>
+            </li>
+            <li class="mob-nav-link-tag">
+              <a class="mob-nav-tag" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
