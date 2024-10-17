@@ -97,7 +97,7 @@
   .reviews-tittle {
     margin-bottom: 60px;
     font-size: 108px;
-    line-height: 1.14;
+    line-height: 115%;
   }
   .reviews-item {
     width: 704px;
@@ -107,6 +107,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .reviews {
+    max-width: 1216px;
+  }
   .reviews-tittle {
     margin-bottom: 80px;
   }
