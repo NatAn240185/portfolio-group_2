@@ -80,13 +80,12 @@
   cursor: no-drop;
 }
 .reviews-section .reviews-btn:disabled .reviews-btn-icon {
-  --color: #e4e5e6;
+  fill: #e4e5e6;
   opacity: 0.22;
+}
+.reviews-section .reviews-btn:disabled . {
   stroke: #3b3b3b;
 }
-/* .reviews-section .reviews-btn:disabled . {
-  stroke: #3b3b3b;
-} */
 .reviews-section .reviews-error-text {
   margin: 0 auto;
   font-size: 30px;
