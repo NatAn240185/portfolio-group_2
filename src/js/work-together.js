@@ -40,47 +40,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
     workTogetherInput.addEventListener('blur', validateEmail);
 
-    console.log('Submit handler attached')
+    console.log('Submit handler attached');
 
+
+    const data = {
+     email: workTogetherInput.value,
+     comment: workTogetherTextArea.value || '',
+            
+};
+
+
+
+
+   
+ 
 
     // Відправка форми
-    workTogetherForm.addEventListener('submit', async function (event) {
-        event.preventDefault();
+   workTogetherForm.addEventListener('submit', async function (event) {
+       event.preventDefault();
+      
         if (!validateEmail()) {
             alert('Please enter a valid email address');
             return;
-        }
-        console.log('Form submitted')
-        // Збір даних з форми
-        const data = {
-            email: workTogetherInput.value,
-            comment: workTogetherTextArea.value || '',
-            timestamp: Date.now(),
-        };
-        console.log('Form Data:', data);
-        await sendData(data);
+       }
+     const data = {
+     email: workTogetherInput.value,
+     comment: workTogetherTextArea.value || '',
+            
+};
+         console.log('Form submitted');
+        await sendRequest(data);
     });
 
-    async function sendData(data) {
-        try {
-            const response = await axios.post(BASE_URL, data, {
-                headers: { 'Content-Type': 'application/json' },
+ async function sendRequest(data) { 
+    try {
+        const response = await axios.post(BASE_URL, data, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             });
+           
+        // Перевірка на успішний статус відповіді
+        if (response.status === 200) {
+            console.log('Запит успішно відправлено:', response.data);
+        } else {
+            throw new Error(`Помилка сервера. Статус: ${response.status}`);
+        }
 
-            if (response.status === 200) {
-                renderModal();
-                workTogetherForm.reset();
-                validIcon.style.display = 'none';
-            } else { throw new Error('Something went wrong on the server'); }
-        }
-        catch (error) {
-            console.error('Error:', error);
-            alert('Error: ' + error.message + '. Please correct your data and try again.');
-        }
+        return response.data;
+    } catch (error) {
+        console.error('Помилка при надсиланні запиту:', error.message);
+        throw error; // Передати помилку для обробки на рівні вище
     }
+    }
+   
+// Виклик функції та обробка відповіді
+sendRequest(data)
+    .then(response => {
+        console.log('Успішна відповідь:', response);
+    })
+    .catch(error => {
+        console.error('Помилка запиту:', error.message);
+    });
+
 
     //Функія обробки кнопки
-    workTogetherBtn.addEventListener('submit', function (event) {
+    workTogetherBtn.addEventListener('click', function (event) {
         event.preventDefault();
         const isEmailValid = validateEmail();
         const isCommentFilled = workTogetherTextArea.value.trim() !== '';
@@ -143,4 +168,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
