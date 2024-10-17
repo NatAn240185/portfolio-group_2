@@ -1,16 +1,16 @@
 // Массив всех проектов
-import icon from "/img/my-projects/symbol-defs.svg"
+import icon from "../img/my-projects/symbol-defs.svg"
 const allProjects = [
-  { img: image1, title: 'English excellence webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image2, title: 'wallet webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image3, title: 'green harvest online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image4, title: 'starlight studio landing page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image5, title: 'power pulse webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image6, title: 'energy flow webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image7, title: 'fruitbox online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image8, title: 'chego jewelry website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image9, title: 'mimino website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
-  { img: image10, title: 'vyshyvanka vibes Landing Page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/project-js-group-2' },
+  { img: image1, title: 'English excellence webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image2, title: 'wallet webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image3, title: 'green harvest online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image4, title: 'starlight studio landing page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image5, title: 'power pulse webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image6, title: 'energy flow webservice ', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image7, title: 'fruitbox online store', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image8, title: 'chego jewelry website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image9, title: 'mimino website', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
+  { img: image10, title: 'vyshyvanka vibes Landing Page', technologies: 'React, JavaScript, Node JS, Git', github: 'https://github.com/NatAn240185/portfolio-group_2' },
 
 
 ];
