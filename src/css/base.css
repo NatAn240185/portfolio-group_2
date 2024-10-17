@@ -43,13 +43,13 @@ section {
 }
 
 @media (min-width: 767.99) {
-  .section {
+  section {
     padding-top: 124px;
   }
 }
 
 @media (min-width: 359.99) {
-  .section {
+  section {
     padding-top: 80px;
   }
 }
