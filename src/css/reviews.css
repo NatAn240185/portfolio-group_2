@@ -1,3 +1,8 @@
+@import url('./base.css');
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'izitoast/dist/css/iziToast.min.css';
+
 .reviews-tittle {
   font-size: 52px;
   font-weight: 400;
@@ -102,10 +107,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .reviews {
-    max-width: 1216px;
-  }
-  .reviews-tittle {
+ .reviews-tittle {
     margin-bottom: 80px;
   }
   .reviews-text {
