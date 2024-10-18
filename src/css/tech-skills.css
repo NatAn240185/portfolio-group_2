@@ -74,12 +74,32 @@
   left: -20px;
 }
 
-p {
-  position: relative;
+.item::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #00b068;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  left: -20px;
 }
 
-.item.sec-row::before {
+.item-sec-row::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
   background-color: #292929;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
+
+p {
+  position: relative;
 }
 
 @media (min-width: 768px) {
