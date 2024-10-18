@@ -4,6 +4,7 @@
 @import 'izitoast/dist/css/iziToast.min.css';
 
 .reviews-tittle {
+  font-family: var(--second-family);
   font-size: 52px;
   font-weight: 400;
   line-height: 1.23;
@@ -78,11 +79,11 @@
   border: 1px solid #e4e5e6;
   cursor: no-drop;
 }
-.reviews-section .reviews-btn:disabled .reviews-arrow {
-  --color: #e4e5e6;
+.reviews-section .reviews-btn:disabled .reviews-btn-icon {
+  fill: #e4e5e6;
   opacity: 0.22;
 }
-.reviews-section .reviews-btn:disabled .btn-icon {
+.reviews-section .reviews-btn:disabled . {
   stroke: #3b3b3b;
 }
 .reviews-section .reviews-error-text {
@@ -107,10 +108,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .reviews {
-    max-width: 1216px;
-  }
-  .reviews-tittle {
+ .reviews-tittle {
     margin-bottom: 80px;
   }
   .reviews-text {
