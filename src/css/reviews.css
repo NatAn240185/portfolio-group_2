@@ -68,6 +68,8 @@
   height: 40px;
   border-radius: 8px;
   border: 1 solid #292929;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .reviews-section .reviews-btn:focus,
